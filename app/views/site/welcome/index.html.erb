@@ -1,0 +1,24 @@
+<h1>Site::Welcome#index</h1>
+
+<table border= '1'>
+<thead>
+<th>Filme</th>
+<th>Episodio</th>
+<th>Diretor</th>
+<th>Data</th>
+</thead>
+<tbody>
+<% @summary_service.general.each do |results| %>
+<tr>
+<td><%= results["title"] %></td>
+<td><%= results["episode_id"] %></td>
+<td><%= results["director"]%></td>
+<td><%= results["release_date"] %></td>
+
+</tr>
+<% end %>
+</tbody>
+
+</table>
+
+
